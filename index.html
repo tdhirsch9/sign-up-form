@@ -9,11 +9,17 @@
 </head>
 
 <body>
+
  
 <div class="wrapper">
 
     <div class="side-banner-container">
+        <div class="odin-container"><img src="img/odin-lined.png" alt="Odin-head" class="odin-head">Odin</div>
   <img src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="Leaves" class="side-banner"> 
+  <div class="credit-container">
+    <div class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="photographer-name">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="unsplash">Unsplash</a>
+    </div>
+  </div>
     </div>
 
     <div class="main-content-container">
@@ -28,42 +34,50 @@
     
 <form action="" method="get" class="sign-up-form">
 
+<div class="middle-section-container">
+
 <p class="form-intro-text">Let's do this!</p>
 
 <div class="inputs-container">
 
     
 
-<div class="form-row">
 
 
+<div class="form-group">
 <label for="first-name">First Name</label>
 <input type="text" name="first-name" id="first-name">
+</div>
 
+<div class="form-group">
 <label for="last-name">Last Name</label>
 <input type="text" name="last-name" id="last-name">
-
 </div>
 
-<div class="form-row">
 
 
+    <div class="form-group">
     <label for="email">Email</label>
     <input type="email" name="email" id="email">
-    
+    </div>
+
+    <div class="form-group">
     <label for="phone-number">Phone Number</label>
-    <input type="tel" name="phone-number" id="phone-number">
+    <input type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number">
+    </div>
 
 
-</div>
 
-<div class="form-row">
 
+
+    <div class="form-group password-container">
 <label for="password">Password</label>
-<input type="password" name="password" id="password">
+<input type="password" name="password" id="password" class="password passwords">
+</div>
 
+<div class="form-group">
 <label for="confirm-password">Confirm Password</label>
-<input type="password" name="confirm-password" id="confirm-password">
+<input type="password" name="confirm-password" id="confirm-password" class="password-confirm passwords">
 
 </div>
 
@@ -71,13 +85,13 @@
 
 </div>
 
-
+</div>
 <footer class="sign-up-form-footer">
 
 <div class="footer-content">    
 <button type="button" class="create-account-button">Create Account</button>
 <div class="text-row">
-<p>Already have an account?</p> <a href="">Log In</a> 
+<p>Already have an account? </p> <a href="" class="login-link">Log In</a> 
 </div>
 
 </div>
